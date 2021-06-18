@@ -20,7 +20,8 @@ connectDB();
 //Define Routes
 app.get('/',(req,res) => {
     res.send("Hello World")
-})
+});
+
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/contacts', require('./routes/contact'));
 app.use('/api/users', require('./routes/users'));
